@@ -10,7 +10,7 @@ function CreateUser() {
     const navigate=useNavigate()
     const Submit= (e)=>{
         e.preventDefault();
-        axios.post("http://localhost:3001/createuser",{name,email,age})
+        axios.post("http://crud-ap-fvv7mcpxb-taruns-projects-f750e9da.vercel.app/createuser",{name,email,age})
         .then(result=>{console.log(result)
             navigate('/')
         })
