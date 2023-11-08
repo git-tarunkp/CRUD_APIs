@@ -9,8 +9,8 @@ app.use(cors(
 {
     origin:["https://crud-ap-frontend.vercel.app"],
    
-    methods:["POST","GET","DELETE","PUT"]
-    // credentials:true
+    methods:["POST","GET","DELETE","PUT"],
+    credentials:true
 
 }
     ))
