@@ -11,7 +11,7 @@ function UpdateUser() {
     const navigate=useNavigate()
     
     useEffect(()=>{
-        axios.get('http://localhost:3001/getUser/'+id)
+        axios.get('http://crud-ap-fvv7mcpxb-taruns-projects-f750e9da.vercel.app/getUser/'+id)
         .then(result => {console.log(result)
           setName(result.data.name)
           setEmail(result.data.email)
