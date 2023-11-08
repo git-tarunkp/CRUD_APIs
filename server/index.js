@@ -6,7 +6,7 @@ const UserModel= require('./models/Users')
 const app = express()
 app.use(cors(
 
-    // headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    headers.append('Access-Control-Allow-Origin', "https://crud-ap-frontend.vercel.app");
     
 {
     origin:["https://crud-ap-frontend.vercel.app"],
