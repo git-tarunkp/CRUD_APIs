@@ -15,7 +15,7 @@ app.use(cors(
     ))
 app.use(express.json())
 
-mongoose.connect('mongodb://127.0.0.1:27017/crud');
+mongoose.connect('mongodb+srv://me210003075:Tarun@@@@cluster0.jg0pnvi.mongodb.net/crud?retryWrites=true&w=majority');
 
 
 app.get('/', (req, res) => {
