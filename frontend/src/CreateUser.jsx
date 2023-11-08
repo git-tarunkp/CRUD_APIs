@@ -8,6 +8,8 @@ function CreateUser() {
     const [email, setEmail]=useState()
     const [age, setAge]=useState()
     const navigate=useNavigate()
+    axios.defaults.withCredentials=true;
+
     const Submit= (e)=>{
         e.preventDefault();
         axios.post("https://crud-ap-api.vercel.app/createuser",{name,email,age})
