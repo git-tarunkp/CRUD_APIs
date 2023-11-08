@@ -7,13 +7,13 @@ function Users() {
         const [users,setUsers]=useState([])
 
         useEffect(()=>{
-            axios.get('https://crud-ap-fvv7mcpxb-taruns-projects-f750e9da.vercel.app')
+            axios.get('http://crud-ap-fvv7mcpxb-taruns-projects-f750e9da.vercel.app')
             .then(result => setUsers(result.data))
             .catch(err=>console.log(err))
         },[])
 
         const handleDelete=(id) =>{
-            axios.delete("https://crud-ap-fvv7mcpxb-taruns-projects-f750e9da.vercel.app/deleteuser/"+id)
+            axios.delete("http://crud-ap-fvv7mcpxb-taruns-projects-f750e9da.vercel.app/deleteuser/"+id)
             .then(res => {console.log(res)
                 window.location.reload()
             })
