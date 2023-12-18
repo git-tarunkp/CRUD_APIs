@@ -9,7 +9,7 @@ function UpdateUser() {
     const [email, setEmail]=useState()
     const [age, setAge]=useState()
     const navigate=useNavigate()
-    axios.defaults.withCredentials=true;
+    // axios.defaults.withCredentials=true;
 
     useEffect(()=>{
         axios.get('https://crud-ap-api.vercel.app/getUser/'+id)
