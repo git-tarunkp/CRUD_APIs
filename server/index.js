@@ -6,14 +6,14 @@ const UserModel= require('./models/Users')
 const app = express()
 app.use(cors(  
 {
-    // origin:["https://crud-ap-frontend.vercel.app/**"],
+    origin:["https://crud-ap-frontend.vercel.app/**"],
    
-    // methods:["POST","GET","DELETE","PUT"],
-    // credentials:true
+    methods:["POST","GET","DELETE","PUT"],
+    credentials:true
 
-    origin: 'https://crud-ap-frontend.vercel.app',
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-    methods:["POST","GET","DELETE","PUT"]
+    // origin: 'https://crud-ap-frontend.vercel.app',
+    // optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    // methods:["POST","GET","DELETE","PUT"]
 }
     ))
 app.use(express.json())
