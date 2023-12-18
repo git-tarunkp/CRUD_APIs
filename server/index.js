@@ -8,7 +8,8 @@ app.use(cors(
 {
     origin: "https://crud-ap-frontend.vercel.app",
    
-    methods:["POST","GET","DELETE","PUT"]
+    methods:["POST","GET","DELETE","PUT"],
+    credentials:true
 
     // origin: 'https://crud-ap-frontend.vercel.app',
     // optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
