@@ -8,7 +8,7 @@ function CreateUser() {
     const [email, setEmail]=useState()
     const [age, setAge]=useState()
     const navigate=useNavigate()
-    axios.defaults.withCredentials=true;
+    // axios.defaults.withCredentials=true;
 
     const Submit= (e)=>{
         e.preventDefault();
