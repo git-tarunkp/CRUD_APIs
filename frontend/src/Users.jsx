@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Users() {
 
-        axios.defaults.withCredentials=true;
+        // axios.defaults.withCredentials=true;
 
         const [users,setUsers]=useState([])
 
