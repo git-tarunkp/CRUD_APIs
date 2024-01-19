@@ -19,7 +19,7 @@ app.use(cors(
     ))
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://metarun:metarun@cluster0.jg0pnvi.mongodb.net/crud?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://me210003075:root@cluster0.voozvxd.mongodb.net/?retryWrites=true&w=majority');
 
 
 app.get('/', (req, res) => {
